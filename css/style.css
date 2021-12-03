@@ -1,0 +1,325 @@
+:root{
+    --f1:'Raleway', sans-serif;
+    --f2:'Open Sans', sans-serif;
+    --f3:'Cardo', serif;
+    --brand:#e84545;
+    --cl-dark:#2d3033;
+    --cl-p:#6c7279;
+    --bg-test:#53354a;
+    --bg-f1:#3a3e64;
+    --bg-f2:#313454;
+    --over-red:rgba(232, 69, 69, 0.90);
+    --over-ban:rgb(45, 48, 51,0.95);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+}
+/*===================
+    common css ends
+=====================*/
+.rale-reg{
+    font-family: var(--f1);
+    font-weight: 400;
+}
+
+.rale-med{
+    font-family: var(--f1);
+    font-weight: 500;
+}
+
+.rale-semi{
+    font-family: var(--f1);
+    font-weight: 600;
+}
+
+.rale-bold{
+    font-family: var(--f1);
+    font-weight: 700;
+}
+
+.open-reg{
+    font-family: var(--f2);
+    font-weight: 400;
+}
+
+.open-med{
+    font-family: var(--f2);
+    font-weight: 500;
+}
+
+.open-semi{
+    font-family: var(--f2);
+    font-weight: 600;
+}
+
+.open-bold{
+    font-family: var(--f2);
+    font-weight: 700;
+}
+.cardo{
+    font-family: var(--f3);
+    font-weight: 400;
+    font-style: italic;
+}
+
+/*===================
+    font css ends
+=====================*/
+.fs-13{
+    font-size: 13px;
+}
+
+.fs-22{
+    font-size: 22px;
+}
+
+.fs-28{
+    font-size: 28px;
+}
+
+.fs-36{
+    font-size: 36px;
+}
+
+.fs-14{
+    font-size: 14px;
+}
+
+.fs-65{
+    font-size: 65px;
+}
+/*===================
+    font size css ends
+=====================*/
+.text-up{
+    text-transform: uppercase;
+}
+
+.text-cap{
+    text-transform: capitalize;
+}
+
+.text-cen{
+    text-align: center;
+}
+
+
+/*===================
+    typography css ends
+=====================*/
+.brand{
+    color: var(--brand);
+}
+
+.text-white{
+    color: #ffffff;
+}
+
+.bg-brand{
+    background-color: var(--brand);
+}
+
+.dark{
+    color: var(--cl-dark);
+}
+
+.detail{
+    color: var(--cl-p);
+}
+
+.cta-btn a{
+    line-height: 46px;
+    display:inline-block;
+    border-radius: 5px ;
+}
+/*===================
+    helpers css ends
+=====================*/
+nav{
+    height: 100px;
+    /* background-color: #f3cece; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+}
+nav .menu{
+    display: flex;
+    justify-content: space-between;
+}
+nav .menu .logo{
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+nav .menu .logo img{
+    width: 100%;
+}
+nav .menu .menu-list{
+    height: 100px;
+    width: 600px;
+}
+nav .menu .menu-list ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+nav .menu .menu-list ul li a{
+    transition: all linear 0.4s;
+}
+
+nav .menu .menu-list ul li a:hover{
+    color: var(--brand);
+}
+
+
+/*===================
+    nav css ends
+=====================*/
+#banner{
+    height: 750px;
+    background: url(../images/banner.jpg)no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+}
+
+#banner::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var( --over-ban);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+#banner .banner-bg{
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#banner .banner-bg h1{
+    line-height: 71px;
+    padding: 0 45px;
+    margin-bottom: 20px;
+}
+
+#banner .banner-bg p{
+    line-height: 33px;
+    padding: 0 110px;
+    margin-bottom: 75px;
+}
+
+#banner .banner-bg a{
+    padding: 0 52px;
+    transition: all linear 0.4s;
+}
+
+#banner .banner-bg a:hover{
+    background-color: #ffffff;
+    color: var(--brand);
+}
+/*===================
+    banner css ends
+=====================*/
+#services{
+    height: 450px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+#services .services-bg{
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+#services .services-bg article{
+    width: 370px;
+    height: 190px;
+    transition: all linear 0.4s;
+}
+
+#services .services-bg article:hover{
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .5);
+}
+
+#services .services-bg article h5{
+    margin-top: 34px;
+}
+
+#services .services-bg article p{
+    margin-top: 15px;
+    padding: 0 21px;
+    line-height: 21px;
+}
+/*===================
+    services css ends
+=====================*/
+#gallery-bg{
+    /* height: 750px; */
+    background-color: salmon;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gallery-bg figure{
+    width: 25%;
+    position: relative;
+}
+
+#gallery-bg figure figcaption{
+    width: 100%;
+    height: 100%;
+    background-color: var(--over-red);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition:  all linear 0.4s;
+    opacity: 0;
+}
+
+#gallery-bg figure:hover figcaption{
+    opacity: 1;
+}
+
+#gallery-bg figure figcaption h6{
+    margin-bottom: 10px;
+}
+
+#gallery-bg figure img{
+    width: 100%;
+}
+/*===================
+    services css ends
+=====================*/
