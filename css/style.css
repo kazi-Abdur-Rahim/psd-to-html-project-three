@@ -9,7 +9,7 @@
     --bg-f1:#3a3e64;
     --bg-f2:#313454;
     --over-red:rgba(232, 69, 69, 0.90);
-    --over-ban:rgb(45, 48, 51,0.95);
+    --over-ban:rgba(43, 46, 74, 0.95);
 }
 
 *{
@@ -36,6 +36,11 @@ ul,ol{
 /*===================
     common css ends
 =====================*/
+.rale-lig{
+    font-family: var(--f1);
+    font-weight: 300;
+}
+
 .rale-reg{
     font-family: var(--f1);
     font-weight: 400;
@@ -349,6 +354,7 @@ nav .menu .menu-list ul li a:hover{
 }
 
 #group-bg .group .group-item p{
+    line-height: 21px;
     margin-top: 30px;
 }
 
@@ -368,3 +374,158 @@ nav .menu .menu-list ul li a:hover{
 /*===================
     group css ends
 =====================*/
+#cilent-bg{
+    height: 500px;
+    background-color: aqua;
+    display: flex;
+}
+
+#cilent-bg .cilent-col1{
+    width: 50%;
+    background:url(../images/story.jpg)no-repeat center / cover;
+}
+
+#cilent-bg .cilent-col2{
+    width: 50%;
+    height: 100%;
+    background-color: #53354a;
+}
+
+#cilent-bg .cilent-col2 h2{
+    line-height: 42px;
+    margin-top: 110px;
+    padding: 0 124px
+}
+
+#cilent-bg .cilent-col2 p{
+    margin-top: 33px;
+    padding-left: 124px;
+}
+
+#cilent-bg .cilent-col2 .icon {
+	margin-left: 380px;
+	margin-top: 70px;
+}
+
+#cilent-bg .cilent-col2 .icon i{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+#cilent-row .cilent{
+    height: 340px;
+}
+
+#cilent-row .cilent h3{
+    padding-top: 100px;
+    padding-bottom: 25px;
+}
+
+#cilent-row .cilent a{
+    margin-top: 40px;
+    line-height: 46px;
+    padding: 0 52px;
+    transition: all linear 0.4s;
+}
+
+#cilent-row .cilent a:hover{
+    background-color: #c6cacc;
+    color: var(--brand);
+}
+/*=====================
+    cilent story ends
+======================*/
+#footer-bg{
+    background-color: var( --bg-f1);
+}
+
+#footer-bg .footer{
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-bg .footer .footer-clm1{
+    width: 370px;
+    height: 100%;
+}
+
+#footer-bg .footer .footer-clm1 h6{
+    padding-top: 70px;
+}
+
+#footer-bg .footer .footer-clm1 span {
+	display: inline-block;
+	padding: 15px 97px;
+    line-height: 22px;
+}
+
+#footer-bg .footer .footer-clm2{
+    width: 370px;
+    height: 100%;
+}
+
+#footer-bg .footer .footer-clm2 h6{
+    padding-top: 70px;
+}
+
+#footer-bg .footer .footer-clm2 a{
+    display: inline-block;
+    color: #c6cacc;
+    padding: 10px 15px;
+    border:1px solid #c6cacc;
+    margin-top: 20px;
+    transition: all linear 0.4s;
+}
+
+#footer-bg .footer .footer-clm2 a:hover{
+    color: var(--brand);
+    background-color: #c6cacc;
+}
+
+#footer-bg .footer .footer-clm3{
+    width: 370px;
+    height: 100%;
+}
+
+#footer-bg .footer .footer-clm3 h6{
+    padding-top: 70px;
+}
+
+#footer-bg .footer .footer-clm3 span {
+	display: inline-block;
+	padding: 15px 0px;
+	line-height: 22px;
+}
+/*=====================
+    footer story ends
+======================*/
+#footer-last{
+    background-color: var(--bg-f2);
+}
+
+#footer-last .footer-row{
+    height: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-last .footer-row p{
+    width: 308px;
+    line-height: 22px;
+    padding: 0 50px;
+    color: #808080;
+}
+
+#footer-last .footer-row p i{
+    color: red;
+    padding: 0 5px;
+}
+
+#footer-last .footer-row p span{
+    color: #ffffff;
+}
+/*=====================
+    footer-last story ends
+======================*/
